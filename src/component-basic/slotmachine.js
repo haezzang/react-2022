@@ -6,19 +6,30 @@ import ReactDom from "react-dom";
 
 
 const SlotMachine=function(props){
+
     const { s1, s2, s3 } = props
- 
-    if(s1===s2 && s2===s3) {
+    const same= s1===s2 && s2===s3;
+    const seven=same&&s1==="7";
+
     return <>
-    <p>{s1} {s2} {s3}</p>  
-    <div style={(s1===7)? { color: 'red' } : null}>
-    <p>Congrats!</p>
-    </div>
+    <p>{s1} {s2} {s3}</p> 
+    {   //조건부랜더링
+        same&&  <p  style={seven ? { color: 'red' } : null} >Congrats!</p>
+    }
     </>
     }
 
-    else   return <p>{s1} {s2} {s3}</p>  
- 
 
-}
-ReactDom.render(<SlotMachine s1="1" s2="1" s3="1" />, document.getElementById("root"))
+    const App=props=>{
+        return(
+            <div>
+                <SlotMachine s1="X" s2="Y" s3="Z" />
+                <SlotMachine s1="X" s2="X" s3="X" />
+                <SlotMachine s1="7" s2="7" s3="7" />
+                <SlotMachine s1="🍓" s2="🍒" s3="🍍" />
+                <SlotMachine s1="🍒" s2="🍒" s3="🍒" />
+            </div>
+        )
+    }
+
+ReactDom.render(<App/>, document.getElementById("root"))
