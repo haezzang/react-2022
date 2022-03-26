@@ -6,4 +6,7 @@
 //import './component-basic/slotmachine';
 //import './component-intermediate/state-study1';
 //import './component-intermediate/UserProfile';
-import './component-intermediate/state-study-with-inner-object';
+//import './component-intermediate/state-study-with-inner-object';
+//import './component-intermediate/counter-demo';
+//import './component-intermediate/lst-demo';
+import './component-intermediate/manipulate-list';

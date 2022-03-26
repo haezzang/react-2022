@@ -8,6 +8,8 @@ import ReactDom from "react-dom";
 //     return(
 //         <div>
 //             <h1>{count}</h1>
+//              세터함수는 나오지 않지만 밑줄코드는 나옴 한꺼번에 상태변경해서 다시 렌더링(더 효율적)
+//             <button onClick={()=>setCount(previous=>previous+1)}>증가</button>
 //             <button onClick={()=>setCount(count+1)}>증가</button>
 //             <button onClick={()=>setCount(count-1)}>감소</button>
 //             <br></br>
