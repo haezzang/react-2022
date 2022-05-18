@@ -24,4 +24,14 @@
 //import './component-advanced/uncontrolled-component';
 //import './component-advanced/use-ref-practice-form';
 //import './component-advanced/contexts/UserContext';
-import './component-advanced/contexts/use-context-using-user-context';
+//import './component-advanced/contexts/use-context-using-user-context';
+//import './component-advanced/contexts/fake-login';
+//import './component-advanced/contexts/github-repo-search';
+//import './component-styling/using-css';//
+//import './component-styling/using-css-module';
+//import './component-styling/using-svg';
+//import './component-styling/using-react-icons';
+//import './use-reducer-demo/use-reducer-counter-1';
+//import './use-callback-memo-demo/user-manage-app';
+//import './use-callback-memo-demo/using-react-memo';
+import './DrawStar';
